@@ -29,7 +29,7 @@ Where, $$\omega = \frac{E_1 - E_0}{\hbar}$$
 $E_1$ and $E_0$ are the energy levels of the $\ket{1}$ and $\ket{0}$ states.  
 
 
-This program implements time evolution as a rotation around the Z basis.
+This program uses rotation operators to simulate time evolution.
 
 
 Bob obtains $\ket{1}$ with probability
