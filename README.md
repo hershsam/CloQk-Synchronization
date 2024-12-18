@@ -10,6 +10,7 @@ Classical clock synchronization protocols, while effective, face several challen
 # Working Principle
 First consider a qubit with stationary states in the computational basis as $\ket{0}$ and $\ket{1}$. 
 Starting with the initial state, a maximally entangled bell state:
+
 $$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B + \ket{-}_A \ket{-}_B}{\sqrt{2}}$$
 
 Here A and B refer to the qubit distributed to Alice and Bob. Alice and Bob both measure their respective qubits at $t=0$. Their clocks being unsynchronized leads to Bob measuring the qubit later than Alice, with a gap of $\Delta$.
