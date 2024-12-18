@@ -56,7 +56,7 @@ The number of iterations can also be varied. Since the program works on the prin
 
 The output is the calculated time delay between the nodes.
 
-# Citations
+# References
 1. [Shi, J., Shen, S. A clock synchronization method based on quantum entanglement. _Sci Rep_ 12, 10185 (2022)](https://www.nature.com/articles/s41598-022-14087-z)  
 2. [X Kong, T Xin, SJ Wei et al. Implementation of Multiparty quantum clock synchronization. arXiv:1708.06050](https://arxiv.org/abs/1708.06050)   
 3. [Kómár, P., Kessler, E., Bishof, M. _et al._ A quantum network of clocks. _Nature Phys_ 10, 582–587 (2014)](https://www.nature.com/articles/nphys3000)   
