@@ -7,3 +7,8 @@ With the increasing popularity of quantum information, quantum entanglement prom
 First consider a qubit with stationary states in the computational basis as $\ket{0}$ and $\ket{1}$. We introduce the Hadamard basis with states $\ket{+} = \frac{\ket{0} + \ket{1}}{\sqrt{2}}$ and $\ket{-} = \frac{\ket{0} - \ket{1}}{\sqrt{2}}$. At the beginning of our application, we prepare the initial entangled state:
 $$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B + \ket{-}_A \ket{-}_B}{\sqrt{2}}$$
 Here A and B refer to the qubit distributed to Alice and Bob. Assuming Alice's clock as the standard, once Alice measures 
+
+#Algorithm Summary
+This algorithm for multiparty clock synchronization is infitely scalable. This program implements this for two and three node networks.
+* The initial state is a quantum W-state :
+  - $$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B + \ket{-}_A \ket{-}_B}{\sqrt{2}}$$
