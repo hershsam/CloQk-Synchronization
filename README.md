@@ -19,9 +19,12 @@ $$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B +
 
 Here A and B refer to the qubit distributed to Alice and Bob. Alice and Bob both measure their respective qubits at $t=0$. Their clocks being unsynchronized leads to Bob measuring the qubit later than Alice, with a gap of $\Delta$.
 
-When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. In the $\Delta$ between their measurements, Bob's state evolves with time : 
+
+When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. In the $\Delta$ between their measurements, Bob's state evolves with time according to Schrödinger's Equation : 
 
 $$\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}$$  
+
+Where $\omega = \frac{E_1 - E_0}{\hbar}
 
 This program implements time evolution as a rotation around the Z basis.
 
@@ -50,7 +53,7 @@ $$P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\o
 # Usage
 The 2 programs implement the synchronization protocol for a network with 2 nodes and 3 nodes.
 
-The inputs for both programs are in the parameters files. The input variables are the frequency of the qubit and the time delay used in the simulation.
+The inputs for both programs are in the parameters files. The input variables are $\omega$ and $\Delta$, the time delay used in the simulation.
 
 The number of iterations can also be varied. Since the program works on the principle of sampling probability distributions, increasing the number of iterations gives more accurate results.
 
