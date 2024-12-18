@@ -21,7 +21,7 @@ $$\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}$$
 
 Bob obtains $\ket{1}$ with probability
 
-$$P(\ket{+}) = \bra{+} \ket{\psi_B} = \frac{1 + cos(\omega \Delta)}{2}$$  
+$$P(\ket{+}) = \langle + | \psi_B \rangle = \frac{1 + cos(\omega \Delta)}{2}$$  
 
 This probability allows Bob to sample and calculate for $\Delta$
 
