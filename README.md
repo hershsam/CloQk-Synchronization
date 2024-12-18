@@ -24,7 +24,7 @@ When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. I
 
 $$\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}$$  
 
-Where $\omega = \frac{E_1 - E_0}{\hbar}
+Where $\omega = \frac{E_1 - E_0}{\hbar}$
 
 This program implements time evolution as a rotation around the Z basis.
 
