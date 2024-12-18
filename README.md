@@ -11,7 +11,7 @@ Here A and B refer to the qubit distributed to Alice and Bob. Assuming Alice's c
 # Algorithm Summary
 This algorithm for multiparty clock synchronization is infitely scalable. This program implements this for two and three node networks.
 * The initial state is a quantum W-state :
-  - $$\ket{\psi} = \frac{1}{\sqrt{n}}(\ket{10...00} + \ket{01...00} + \ket{00...01})$$
+  $$\ket{\psi} = \frac{1}{\sqrt{n}}(\ket{10...00} + \ket{01...00} + \ket{00...01})$$
 * Alice, at standard time $t_A = 0$ measures the qubit in her possession in the $(\ket{+},\ket{-})$ basis .
   - Alice is taken as the standard without loss of generality, and synchronization is performed relative to her clock.
 * Alice broadcasts her measurement result across the network.
