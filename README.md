@@ -46,7 +46,16 @@ This algorithm for multiparty clock synchronization is infitely scalable. This p
 $$P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\omega_3 ... , \omega_{n}$$
 * Over many iterations, the others can deduce the value of $\Delta$.
   - For $|\omega \Delta|<2 \pi$, the others can adjust their clock accordingly.
- 
+
+# Usage
+The 2 programs implement the synchronization protocol for a network with 2 nodes and 3 nodes.
+
+The inputs for both programs are in the parameters files. The input variables are the frequency of the qubit and the time delay used in the simulation.
+
+The number of iterations can also be varied. Since the program works on the principle of sampling probability distributions, increasing the number of iterations gives more accurate results.
+
+The output is the calculated time delay between the nodes.
+
 # Citations
 Shi, J., Shen, S. A clock synchronization method based on quantum entanglement. _Sci Rep_ **12**, 10185 (2022).   
 X Kong, T Xin, SJ Wei et al. Implementation of Multiparty quantum clock synchronization. arXiv:1708.06050   
