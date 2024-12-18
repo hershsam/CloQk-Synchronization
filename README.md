@@ -17,6 +17,6 @@ This algorithm for multiparty clock synchronization is infitely scalable. This p
 * Alice broadcasts her measurement result across the network.
 * Every node performs measurement based on their respective clocks at $t=0$, which has a difference of $\Delta$ from the standard clock.
 * If Alice measured $\ket{+}$, the others obtain $\ket{+}$ upon measurement with probability:
-$$ P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\omega_3 ... , \omega_n $$
+$$P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\omega_3 ... , \omega_{n}$$
 * Over many iterations, the others can deduce the value of $\Delta$.
   - For $|\omega \Delta|<2 \pi$, the others can adjust their clock accordingly.  
