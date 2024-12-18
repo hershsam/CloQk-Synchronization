@@ -18,7 +18,7 @@ When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. I
 $$
 \ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}
 $$
-Bob obtains $\ket{1} with probability
+Bob obtains $\ket{1}$ with probability
 $$
 P(\ket{+}) = \bra{+} \ket{\psi_B} = \frac{1 + cos(\omega \Delta)}{2}
 $$
