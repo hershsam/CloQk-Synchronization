@@ -4,7 +4,7 @@ Clock synchronization determines the time difference between spatially separated
 With the increasing popularity of quantum information, quantum entanglement promises to be a useful platform for several applications of communication. This is the spirit that we apply to our project, quantum clock synchronization.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4e65181d-a7fb-40cb-b565-21c4a80e8e18" width = 200/>
+  <img src="https://github.com/user-attachments/assets/4e65181d-a7fb-40cb-b565-21c4a80e8e18" width = 300/>
 </p>
 
 Classically, clock synchronization algorithms either make use of a client-server model or they employ a decentralized approach where nodes coordinate directly with each other to align their clocks. In the client-server model, the client sends a request to a server (which has a more accurate clock), and the server responds with a time stamp. The client then estimates the round-trip network delay and adjusts its own clock accordingly. Algorithms like **Cristian’s Algorithm** and **Network Time Protocol (NTP)** work this way, where the client uses the server's timestamp along with the round-trip delay to adjust its local clock. In contrast, decentralized models like the **Berkeley Algorithm** allow nodes to synchronize their clocks with each other without relying on a single authoritative time server. In this model, one node acts as a coordinator, periodically requesting the time from other nodes, calculating the average time, and sending adjustment messages back to each node.
