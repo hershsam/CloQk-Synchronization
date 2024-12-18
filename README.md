@@ -23,6 +23,7 @@ Bob obtains $\ket{1}$ with probability
 $$P(\ket{+}) = \bra{+} \ket{\psi_B} = \frac{1 + cos(\omega \Delta)}{2}$$  
 
 This probability allows Bob to sample and calculate for $\Delta$
+
 # Algorithm Summary
 This algorithm for multiparty clock synchronization is infitely scalable. This program implements this for two and three node networks.
 * The initial state is a quantum W-state :
