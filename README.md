@@ -8,15 +8,15 @@ First consider a qubit with stationary states in the computational basis as $\ke
 $$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B + \ket{-}_A \ket{-}_B}{\sqrt{2}}$$
 Here A and B refer to the qubit distributed to Alice and Bob. Assuming Alice's clock as the standard, once Alice measures 
 
-#Algorithm Summary
+# Algorithm Summary
 This algorithm for multiparty clock synchronization is infitely scalable. This program implements this for two and three node networks.
 * The initial state is a quantum W-state :
-  - $$\ket{\psi} = \frac{1}{sqrt{n}}(\ket{10...00} + \ket{01...00} + \ket{00...01})$$
+  - $$\ket{\psi} = \frac{1}{\sqrt{n}}(\ket{10...00} + \ket{01...00} + \ket{00...01})$$
 * Alice, at standard time $t_A = 0$ measures the qubit in her possession in the $(\ket{+},\ket{-})$ basis .
   - Alice is taken as the standard without loss of generality, and synchronization is performed relative to her clock.
 * Alice broadcasts her measurement result across the network.
 * Every node performs measurement based on their respective clocks at $t=0$, which has a difference of $\Delta$ from the standard clock.
 * If Alice measured $\ket{+}$, the others obtain $\ket{+}$ upon measurement with probability:
-  -$P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\omega_3 ... , \omega_n
+  -$P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\omega_3 ... , \omega_n$
 * Over many iterations, the others can deduce the value of $\Delta$.
   - For $|\omega \Delta|<2 \pi$, the others can adjust their clock accordingly.  
