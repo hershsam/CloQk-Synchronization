@@ -63,4 +63,4 @@ The output is the calculated time delay between the nodes.
 4. [M Krčo, P Marko. Quantum clock synchronization: Multiparty protocol. Phys. Rev. A 66, 024305 (2022)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.66.024305)   
 
 # Credits
-This was developed by Hersh Samdani (@hershsam) and Yash Kashtikar (@YashKash63), students of Engineering Physics at Indian Institute of Technology, Madras.
+This repository was developed by [Hersh Samdani](https://github.com/hershsam) and [Yash Kashtikar](https://github.com/YashKash63), students of Engineering Physics at Indian Institute of Technology, Madras.
