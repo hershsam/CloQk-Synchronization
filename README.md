@@ -19,6 +19,7 @@ When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. I
 
 $$\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}$$  
 
+This program implements time evolution as a rotation around the Z basis.
 Bob obtains $\ket{1}$ with probability
 
 $$P(\ket{+}) = \langle + | \psi_B \rangle = \frac{1 + cos(\omega \Delta)}{2}$$  
