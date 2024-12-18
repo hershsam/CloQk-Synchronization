@@ -4,3 +4,4 @@ Clock synchronization determines the time difference between spatially separated
 With the increasing popularity of quantum information, quantum entanglement promises to be a useful platform for several applications of communication. This is the spirit that we apply to our project, quantum clock synchronization.
 
 # Application
+First consider a qubit with stationary states $\ket{0}$ and $\ket{1}$ 
