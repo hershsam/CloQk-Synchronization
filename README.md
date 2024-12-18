@@ -7,11 +7,22 @@ Classically, clock synchronization algorithms either make use of a client-server
 
 Classical clock synchronization protocols, while effective, face several challenges that can be addressed by quantum clock synchronization. One major issue is network delay, as classical protocols like NTP and Cristian’s algorithm rely on estimating round-trip time, which can be asymmetric and unpredictable. Quantum synchronization, using entangled particles, can avoid this by providing instantaneous and precise time transfer, regardless of network conditions. Furthermore, while classical systems struggle with maintaining accuracy over long distances, quantum entanglement allows for synchronization over vast distances without degradation, offering better scalability and precision, especially in large networks. 
 
-# Application
-First consider a qubit with stationary states in the computational basis as $\ket{0}$ and $\ket{1}$. We introduce the Hadamard basis with states $\ket{+} = \frac{\ket{0} + \ket{1}}{\sqrt{2}}$ and $\ket{-} = \frac{\ket{0} - \ket{1}}{\sqrt{2}}$. At the beginning of our application, we prepare the initial entangled state:
-$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B + \ket{-}_A \ket{-}_B}{\sqrt{2}}$
-Here A and B refer to the qubit distributed to Alice and Bob. Assuming Alice's clock as the standard, once Alice measures 
+# Working Principle
+First consider a qubit with stationary states in the computational basis as $\ket{0}$ and $\ket{1}$. 
+Starting with the initial state, a maximally entangled bell state:
+$$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B + \ket{-}_A \ket{-}_B}{\sqrt{2}}$$
 
+Here A and B refer to the qubit distributed to Alice and Bob. Alice and Bob both measure their respective qubits at $t=0$. Their clocks being unsynchronized leads to Bob measuring the qubit later than Alice, with a gap of $\Delta$.
+
+When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. In the $\Delta$ between their measurements, Bob's state evolves with time : 
+$$
+\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}
+$$
+Bob obtains $\ket{1} with probability
+$$
+P(\ket{+}) = \bra{+} \ket{\psi_B} = \frac{1 + cos(\omega \Delta)}{2}
+$$
+This probability allows Bob to sample and calculate for $\Delta$
 # Algorithm Summary
 This algorithm for multiparty clock synchronization is infitely scalable. This program implements this for two and three node networks.
 * The initial state is a quantum W-state :
