@@ -16,13 +16,11 @@ $$\ket{\psi} = \frac{\ket{00}+ \ket{11}}{\sqrt{2}} = \frac{\ket{+}_A \ket{+}_B +
 Here A and B refer to the qubit distributed to Alice and Bob. Alice and Bob both measure their respective qubits at $t=0$. Their clocks being unsynchronized leads to Bob measuring the qubit later than Alice, with a gap of $\Delta$.
 
 When Alice measures $\ket{+}$, Bob's qubit immediately collapses to $\ket{+}$. In the $\Delta$ between their measurements, Bob's state evolves with time : 
-$$
-\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}
-$$
+
+$$\ket{\psi_B} = \frac {\ket{0} + e^{-i \omega \Delta}\ket{1}}{\sqrt{2}}$$
 Bob obtains $\ket{1}$ with probability
-$$
-P(\ket{+}) = \bra{+} \ket{\psi_B} = \frac{1 + cos(\omega \Delta)}{2}
-$$
+
+$$P(\ket{+}) = \bra{+} \ket{\psi_B} = \frac{1 + cos(\omega \Delta)}{2}$$
 This probability allows Bob to sample and calculate for $\Delta$
 # Algorithm Summary
 This algorithm for multiparty clock synchronization is infitely scalable. This program implements this for two and three node networks.
@@ -37,4 +35,10 @@ This algorithm for multiparty clock synchronization is infitely scalable. This p
 
 $$P(\ket{+}) = \frac{1}{2} + \frac{cos(\omega \Delta)}{n}, \omega = \omega_2 ,\omega_3 ... , \omega_{n}$$
 * Over many iterations, the others can deduce the value of $\Delta$.
-  - For $|\omega \Delta|<2 \pi$, the others can adjust their clock accordingly.  
+  - For $|\omega \Delta|<2 \pi$, the others can adjust their clock accordingly.
+ 
+# Citations
+Shi, J., Shen, S. A clock synchronization method based on quantum entanglement. _Sci Rep_ **12**, 10185 (2022).
+X Kong, T Xin, SJ Wei et al. Implementation of Multiparty quantum clock synchronization. arXiv:1708.06050
+Kómár, P., Kessler, E., Bishof, M. _et al._ A quantum network of clocks. _Nature Phys_ **10**, 582–587 (2014).
+M Krčo, P Marko. Quantum clock synchronization: Multiparty protocol. Phys. Rev. A 66, 024305 (2022)
